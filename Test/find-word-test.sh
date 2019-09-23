@@ -1,7 +1,7 @@
-if curl -s "5000" | grep "Jenkins"
+if curl -s "http://localhost:5000" | grep "Hello"
 then
     # if the keyword is in the conent
-    echo " the website is working fine"
+    echo "Hi there"
 else
-    echo "Error"
+    echo "Error-no greeting found"
 fi
